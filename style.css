@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+}
+
+.upload-box input {
+  padding: 10px;
+  width: 100%;
+  border: 2px dashed #007bff;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.dimension-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.dimension-inputs input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+button,
+a {
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover,
+a:hover {
+  background: #0056b3;
+}
+
+canvas {
+  display: none;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* ✅ Desktop View */
+@media (min-width: 600px) {
+  .dimension-inputs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .dimension-inputs input {
+    width: 48%;
+  }
+
+  .btn-group {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btn-group button,
+  .btn-group a {
+    width: 48%;
+  }
+}
